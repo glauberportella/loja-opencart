@@ -1,0 +1,10 @@
+2013-06-21 0:20:00 - PHP Notice:  Undefined variable: entry_conta_cedente in /var/www/bomne/public_html/admin/view/template/payment/boleto_bb.tpl on line 98
+2013-06-21 0:20:00 - PHP Notice:  Undefined variable: boleto_bb_conta_cedente in /var/www/bomne/public_html/admin/view/template/payment/boleto_bb.tpl on line 99
+2013-06-21 0:20:00 - PHP Notice:  Undefined variable: entry_nosso_numero2 in /var/www/bomne/public_html/admin/view/template/payment/boleto_bb.tpl on line 139
+2013-06-21 0:20:00 - PHP Notice:  Undefined variable: boleto_bb_nosso_numero2 in /var/www/bomne/public_html/admin/view/template/payment/boleto_bb.tpl on line 140
+2013-06-21 0:20:00 - PHP Notice:  Undefined variable: entry_nosso_numero3 in /var/www/bomne/public_html/admin/view/template/payment/boleto_bb.tpl on line 143
+2013-06-21 0:20:00 - PHP Notice:  Undefined variable: boleto_bb_nosso_numero3 in /var/www/bomne/public_html/admin/view/template/payment/boleto_bb.tpl on line 144
+2013-06-21 0:20:00 - PHP Notice:  Undefined variable: entry_nosso_numero_const1 in /var/www/bomne/public_html/admin/view/template/payment/boleto_bb.tpl on line 147
+2013-06-21 0:20:00 - PHP Notice:  Undefined variable: boleto_bb_nosso_numero_const1 in /var/www/bomne/public_html/admin/view/template/payment/boleto_bb.tpl on line 148
+2013-06-21 0:20:00 - PHP Notice:  Undefined variable: entry_nosso_numero_const2 in /var/www/bomne/public_html/admin/view/template/payment/boleto_bb.tpl on line 151
+2013-06-21 0:20:00 - PHP Notice:  Undefined variable: boleto_bb_nosso_numero_const2 in /var/www/bomne/public_html/admin/view/template/payment/boleto_bb.tpl on line 152
