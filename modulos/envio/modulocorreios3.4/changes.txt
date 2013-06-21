@@ -1,0 +1,145 @@
+v3.4 - 12/10/2012
+
+- Adicionado mais 13 serviços com contrato
+
+v3.3.3 - 06/08/2012
+
+- Correção para erro gerado (peso acima do normal) quando o produto é cadastrado com a unidade em gramas (somente p/ versões acima de 1.5.1)
+
+v3.3.2 - 14/07/2012
+
+- Correção para erro gerado quando CEP contém espaços
+- Suporte para unidade de medida padrão tanto em milímetros quanto em centímetros
+- Suporte para unidade de peso padrão tanto em gramas quanto em quilogramas
+
+v3.3.1 - 01/01/2012
+
+- Ajustado para as novas dimensões permitidas pelos Correios (http://blog.correios.com.br/comercioeletronico/)
+
+v3.3 - 01/11/2011
+
+- Adicionado serviço de e-Sedex
+
+v3.2.2 - 01/11/2011
+
+- Correção (adaptação) do módulo para o bug do webservice dos Correios: 
+Se o CEP não suporta Sedex 10, os Correios retornam os dados com código de erro 0 (nenhum erro), mas com valor de frete 0,00 ou só com os valores dos adicionais (mão própria, aviso de recebimento e declarar valor).
+
+v3.2.1 - 16/08/2011
+
+- Correção da forma de cálculo do peso de cada produto no carrinho.
+
+v3.2 - 21/06/2011
+
+- Adequação do módulo a recente mudança dos Correios: desde 21 de Junho o coeficiente (relação peso/volume) passou para 6.000 para o cálculo de todos os serviços. Com essa padronização, os valores de todos os serviços podem ser obtidos em uma só chamada ao webservice dos Correios.
+
+- Correção de bug de não surtir efeito quando o módulo Correios é desabilitado.
+
+v3.1.1 - 17/06/2011
+
+- Correção de bug de só aparecer Sedex 10.
+
+v3.1 - 14/06/2011
+
+- Adicionado Sedex 10
+
+v3.0 - 28/05/2011
+
+- Novo algoritmo para cálculo do frete: 
+	'Empacota' o carrinho em caixas com dimensões e pesos dentro dos padrões dos Correios e calcula o frete para cada caixa. O Frete total do carrinho é a soma dos fretes das caixas.
+	Essa forma de cálculo elimina a principal deficiência do módulo: carrinho acima de 30Kg era calculado o frete de cada produto.
+
+
+v2.2 - 24/05/2011
+
+- Opção de adicionar dias a mais além prazo de entrega dos Correios.
+
+- Os Correios em 09/05/2011 passaram a usar as mesmas dimensões do PAC na validação do Sedex. Isso não muda o valores dos fretes, somente as condições de validação.
+
+- Textos explicativos nas opções de configuração do módulo.
+
+v2.1 - 06/05/2011
+
+	Houve muitas versões lançadas em curto espaço de tempo justamente pela mudança na forma de cálculos do Sedex.
+	Devido a essa alteração, as informações no site dos Correios ainda estão desencontradas, ou seja, atualizaram algumas informações e outras não.
+	Fui na agência dos Correios mais próxima e conversei com o gerente para esclarecer em definitivo sobre as mudanças.
+	O gerente foi muito atencioso e mostrou a forma correta de cálculo para Sedex e PAC. Descobri então que apesar da família Sedex passar a usar as dimensões
+	para o cálculo do frete, alguns parâmetros são diferentes do PAC.
+	Esta versão contempla a forma correta do novo cálculo de frete tanto para a família Sedex quanto o PAC.
+
+v2.0.1 - 29/04/2011
+
+- Considera peso cúbico no cálculo somente se o peso normal for maior que 2Kg. 
+
+- Melhora no texto de exibição de prazo de entrega.
+
+v2.0 - 28/04/2011
+
+- Módulo totalmente reescrito
+
+- Os módulos Sedex, PAC e Sedex a Cobrar são unidos em um só módulo chamado Correios (Brasil)
+
+- Os valores dos fretes dos serviços dos Correios (Sedex, PAC e Sedex a Cobrar) são obtidos em uma única chamada aos webservice dos Correios evitando assim o 'overhead' de chamadas ao site dos Correios
+
+- As mensagens de erros obtidas dos Correios são gravadas no log de erros do OpenCart para consulta
+
+- Coexistência da versão 2 com as versões anteriores do módulo. Assim você pode instalar a versão 2 e escolher qual versão deixar habilitado para cálculo do frete.
+
+v1.3.2 - 27/04/2011
+
+- Atualização das traduções dos módulos para português que estavam causando problemas com informações duplicadas.
+
+v1.3.1 - 25/04/2011
+
+- Corrigido problema de Sedex a Cobrar enviar o seu valor para algum gateway de pagamento (Pagamento Digital, Pagseguro, etc). Neste caso o valor exibido do Sedex a Cobrar é só para conhecimento do cliente e loja e não é contabilizado na transação eletrônica.
+
+v1.3 - 22/04/2011
+
+- Atualizado para atender a mudança na forma de cálculo do Sedex/Sedex a Cobrar alterado pelos Correios em 21/04/2011.
+
+- Com essas mudanças, a família Sedex passa a usar os mesmos parâmetros de cálculo do PAC.
+
+
+v1.2 - 19/04/2011
+
+- Adicionado Sedex a cobrar
+
+- Modificado para usar as dimensões mínimas dos Correios se algum produto não tiver as dimensões mínimas exigidas.
+
+- Modificado para inverter a altura e comprimento no processo de cálculo do frete se a altura for maior que o comprimento. Note que fazendo isso você concorda que o pacote pode ser 'deitado' durante o transporte.
+
+v1.1.1 - 21/01/2011
+
+- Correção: em caso de somente um produto no carrinho, poderia violar algumas regras de envio, gerando erros.
+
+v1.1 - 14/01/2011
+
+- Possibilidade de habilitar as opções: 'Mão Própria', 'Aviso de Recebimento' e 'Declarar Valor' nas configurações  do Sedex/PAC.
+
+- Possibilidade de adicionar um porcentual ao valor final do frete (campo 'Valor Adicional'). Assim o valor final do frete seria: frete = frete + (frete * Valor Adicional%).
+
+- Somente Sedex: valor mínimo declarado para o Sedex é de R$10,50, caso opte por 'Declarar Valor'. Assim se o produto ou carrinho for menor que R$10,50, este valor será usado.
+
+- Correção: se o módulo for calcular o frete para cada produto no carrinho (veja regras do funcionamento do módulo), ele enviava como valor a ser declarado o total da compra e não o valor de cada produto.
+
+0bs.: para atualizar a versão do Sedex/PAC, desinstale a versão anterior pelo Painel de Administração; Copie (sobrescreve) os novos arquivos e instale novamente pelo Painel. Não esqueça de configurar as opções do módulo.
+
+v1.01 - 04/01/2011
+
+- Correção: não enviava para os correios o total da compra com as devidas taxas (impostos).
+
+Para atualizar a versão anterior, só sobrescrever os arquivos.
+
+----------------------------
+Dúvidas, sugestões e avisos sobre bugs acessem o tópico do módulo no fórum do OpenCart Brasil:
+http://www.opencartbrasil.com.br/forum/viewtopic.php?f=18&t=379
+
+----------------------------
+Agradecimentos: 
+- Thalles Cardoso que desenvolveu o algoritmo de 'empacotamento'
+- Manoel Vidal responsável por manter o site OpenCart Brasil - www.opencartbrasil.com.br
+- A todas as pessoas que enviaram sugestões para o aperfeiçoamento do módulo
+
+Mantenedor:
+Júlio César Campos Guimarães
+

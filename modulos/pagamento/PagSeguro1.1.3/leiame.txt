@@ -1,0 +1,47 @@
+Módulo PagSeguro para OpenCart Versão v1.5.x
+-------------------------------------------------------
+
+Requisitos:
+----------
+
+A biblioteca PagSeguro em PHP necessita das seguintes dependências para seu funcionamento:
+
+- Standard PHP Library (SPL)
+
+- Biblioteca cURL
+
+- DOM extension
+
+Instalação
+----------
+
+1 - Descompacte o conteúdo no diretório raiz de sua loja.
+
+2 - Configure as opções do módulo PagSeguro no painel de administração.
+
+3 - No painel da sua conta no site do PagSeguro, em Preferências, item Frete, escolha o tipo de frete conforme a configuração feita para o módulo.
+	Se optou pelo frete calculado pela sua loja, marque 'Frete fixo'. Se optou pelo cálculo de frete feito pelo PagSeguro, marque "Frete por peso" 
+
+4 - No painel da sua conta no site do PagSeguro, em Integrações, item Notificação de Transação, marque "Ativado" e define a URL de notificações seguindo o padrão:
+	
+	http://www.sualoja.com.br/index.php?route=payment/pagseguro/callback
+	
+	Substitui a parte 'http://www.sualoja.com.br' pelo endereço de sua loja.
+	
+Notas
+----------	
+
+- Se optar pelo frete calculado pelo PagSeguro, o valor não constará no total do pedido. O mesmo será informado no  histórico do pedido.
+- Há limitação de 60 caracteres para o e-mail do cliente, de acordo com a API do PagSeguro. Se ultrapassá-lo, um erro será gerado.
+- Há limitação de 50 caracteres para o nome do cliente. O módulo retira os caracteres que ultrapassarem esse limite.
+- O módulo tenta separar o DDD do número de telefone (a API tem campos separados para DDD e o número do telefone em si), mas somente se o telefone do cliente tiver 10 dígitos.
+Exemplos de formatos válidos são: (11)7777-0000, 11 7777 0000, 1177770000, etc. Se não obtiver sucesso, o PagSeguro pedirá o DDD e telefone para prosseguir com o pagamento.
+- Os campos 'número' e 'complemento' do endereço de entrega exigidos pelo PagSeguro são enviados com nenhum dado porque o OpenCart não possui esses campos separados.
+Assim o cliente deverá preenchê-los para continuar com o pagamento.
+
+----------------------------
+Dúvidas, sugestões e avisos sobre bugs acessem o fórum do OpenCart Brasil:
+http://opencartbrasil.com.br/forum
+
+Mantenedor:
+Júlio César Campos Guimarães

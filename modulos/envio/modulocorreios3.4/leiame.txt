@@ -1,0 +1,87 @@
+Módulo Correios - SEDEX/PAC/e-SEDEX com ou sem contrato
+-----------------------------------------------
+
+Parâmetros usados pelos correios:
+--------------------------------
+
+	Dimensão máxima: 105cm, tanto para comprimento, largura ou altura
+	Soma máxima das dimensões: 200cm
+	Peso máximo: 30Kg
+	Valor máximo declarado: R$10.000,00
+	
+Como é feito o cálculo do frete (segundo os Correios):
+-----------------------------------------------------
+
+Passo 1 - Peso cúbico
+
+	a) Medir as dimensões do objeto (comprimento, largura e altura), em centímetros;   
+	b) Calcular o volume do objeto multiplicando o comprimento pela largura e pela altura;
+	c) Dividir o produto da multiplicação por 6000. O resultado é o peso cúbico.
+
+Passo 2 - Peso bruto (balança)
+
+	Pesar o objeto para obter o peso bruto.
+
+Passo 3 - Precificação
+
+	O preço a ser cobrado dependerá do peso a definir:
+	
+	a) Se o peso cúbico for menor ou igual a [5Kg] usa-se o peso real (bruto) do objeto.
+	b) Se o peso cúbico for maior que [5Kg], usa-se o maior valor entre o peso bruto e o peso cúbico.
+	
+	Exemplo 1 - para um produto que tem peso bruto de 2Kg e as seguintes dimensões:
+	Comprimento: 30cm;
+	Largura: 30cm;
+	Altura: 30cm;
+	Temos:
+	Peso cúbico = 30*30*30 = 27000 -> 27000/6000 = 4,5kg (5Kg na tabela dos Correios)
+	5Kg é menor ou igual a [5Kg]. Então usa-se o peso bruto.
+	----
+	
+	Exemplo 2 - para um produto que tem peso bruto de 2Kg e as seguintes dimensões:
+	Comprimento: 40cm;
+	Largura: 40cm;
+	Altura: 30cm;
+	Temos:
+	Peso cúbico = 40*40*30 = 48000 -> 48000/6000 = 8kg	
+	8Kg é maior que [5Kg], então escolhemos o maior valor entre 2Kg(peso bruto) e 8Kg(peso cúbico). Usa-se o peso cúbico.
+
+Requisitos:
+----------
+
+Servidor local ou de hospedagem habilitado para trabalhar com a biblioteca CURL do PHP.
+
+Instalação
+----------
+
+1 - Descompacte o conteúdo no diretório raiz de sua loja.
+
+2 - Configure as opções do módulo 'Correios (Brasil)' no painel de administração.
+
+Observações:
+-----------
+
+1) Os valores dos fretes obtidos diretamente do site dos Correios são estimativas que devem ser confirmados no ato da postagem.
+
+2) Para o correto funcionamento do módulo é essencial o cadastro correto das dimensões e pesos do produtos. 
+   As dimensões podem ser em milímetros ou centímetros. O peso em gramas ou kilogramas.
+
+3) Problemas como CEP de origem e destino incorretos, dimensões e pesos dos produtos inexistentes ou fora dos padrões dos Correios e também problemas com o webservice dos Correios
+   (site fora do ar) acarreta o não aparecimento das opções de entrega dos Correios para o cliente.
+
+4) Se as opções dos Correios não aparecerem consulte o log de erros do OpenCart para mais detalhes.
+
+5) Nem todo CEP é coberto por alguns serviços, como o Sedex 10. Neste caso, a opção de entrega deste serviço não aparecerá para o cliente.
+
+----------------------------
+Dúvidas, sugestões e avisos sobre bugs acessem o tópico do módulo no fórum do OpenCart Brasil:
+http://www.opencartbrasil.com.br/forum/viewtopic.php?f=18&t=379
+
+----------------------------
+Agradecimentos: 
+- Thalles Cardoso que desenvolveu o algoritmo de 'empacotamento'
+- Manoel Vidal responsável por manter o site OpenCart Brasil - www.opencartbrasil.com.br
+- A todas as pessoas que enviaram sugestões para o aperfeiçoamento do módulo
+
+Mantenedor:
+Júlio César Campos Guimarães

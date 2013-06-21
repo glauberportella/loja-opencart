@@ -1,0 +1,38 @@
+﻿v1.1.3 - 25/09/2012
+
+- Correção para o erro "PHP Notice: Undefined index: last_order_id in ......../catalog/controller/checkout/success.php on line 66" quando se retorna à loja
+
+v1.1.2 - 14/06/2012
+
+Correção para não enviar e-mail para o cliente quando o status muda para 'Disponível', ou seja, quando o PagSeguro avisa o vendedor que já pode retirar o pagamento.
+
+v1.1.1 - 29/05/2012
+
+Ajuste no retorno automático que não estava atualizando os status dos pedidos, conforme relato de alguns usuários.
+
+v1.1 - 26/05/2012
+
+- Nova forma de envio do frete, taxas e descontos, que pode resolver diferenças de valores entre a loja e PagSeguro devido aos arredondamentos
+- Suporte a compra de vale presente
+- Ajuste para que o nome do comprador não ultrapasse 50 caracteres como exigido pela API do PagSeguro
+- Ajuste para que a descrição do produto (formado pelo modelo, nome e opções) não ultrapasse 100 caracteres como exigido pela API do PagSeguro
+
+v1.0.4 - 18/05/2012
+
+Correção para impostos aplicados sobre o frete
+
+v1.0.3 - 15/05/2012
+
+Correção para o problema de não enviar os dados para o PagSeguro se for uma compra sem cadastro.
+
+v1.0.2 - 28/04/2012
+
+Remoção de espaços extras no nome e sobrenome que causa erro no PagSeguro
+
+v1.0.1 - 16/04/2012
+
+Correção correção de codificação do nome do cliente
+
+v1.0 - 15/04/2012
+
+Versão inicial

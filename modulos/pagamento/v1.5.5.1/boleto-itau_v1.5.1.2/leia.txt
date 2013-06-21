@@ -1,0 +1,44 @@
+/*
+* Módulo de Pagamento Boleto Bancário Banco Itaú
+* Feito sobre OpenCart 1.5.1.2
+* Autor Guilherme Desimon - http://www.desimon.net
+* @12/2010
+* Alterado para versão 1.5.1.2 por: Toni Lopes :D
+* @10/2011
+* colaboração de marciosolano
+* Sob licença GPL.
+*/
+
+Instalação:
+
+1) Extrair para a raiz da loja.
+
+
+2) Na área administrativa da loja dar permissão para o grupo de usuários desejado para acessar e modificar o módulo payment/boleto_bb:
+
+2.1) Na sua área administrativa "/admin" vá em Sistema -> Usuários -> Grupos de Usuários;
+
+2.2) No grupo "Top Administrator" clique em Editar;
+
+2.3) Na lista "Permissão de Acesso", marque a opção "Payment/boleto_itau";
+
+2.4) Faça o mesmo na lista "Permissão de Modificação";
+
+
+
+3)Configurar o módulo com os dados do boleto necessários, vá em Extensões -> Formas de Pagamento;
+
+3.1) Encontre o módulo "Boleto Bancário Banco Itaú" e clique em Editar;
+
+3.2) Configure os campos necessários de acordo com seu dados de geração de boleto.
+
+
+Instalação Concluída!
+
+
+
+Guilherme Desimon
+http://www.desimon.net/
+Twitter: @guidesimon
+
+Obs: Caso queiram fazer testes, podem colocar o número da minha conta no boleto. Quem sabe não dou sorte. :D
