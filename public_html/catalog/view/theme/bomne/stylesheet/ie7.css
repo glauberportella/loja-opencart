@@ -49,3 +49,7 @@
 	line-height: 12px;
 	display: block;
 }
+/* gradient with css */
+.gradient {
+   filter: none;
+}

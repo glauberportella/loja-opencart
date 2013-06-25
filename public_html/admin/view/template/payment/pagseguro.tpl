@@ -35,6 +35,10 @@
 	        <td><input type="text" name="pagseguro_posfixo" value="<?php echo $pagseguro_posfixo; ?>" /></td>
 	      </tr>
 	      <tr>
+      		<td><?php echo $entry_acrescimo; ?></td>
+      		<td><input type="text" name="pagseguro_acrescimo" value="<?php echo $pagseguro_acrescimo; ?>"> <small>utilize somente separador decimal (ex.: 12,50 ou 12.50)</small></td>
+      	  </tr>
+	      <tr>
 	        <td><?php echo $entry_tipo_frete; ?></td>
 	        <td>
 			  <select name="pagseguro_tipo_frete">

@@ -247,3 +247,7 @@
 #footer {
 	zoom: 1;
 }
+/* gradient with css */
+.gradient {
+   filter: none;
+}

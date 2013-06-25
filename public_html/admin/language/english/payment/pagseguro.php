@@ -31,6 +31,7 @@ $_['entry_geo_zone']      			= 'Região geográfica:';
 $_['entry_status']        			= 'Situação:';
 $_['entry_sort_order']    			= 'Ordenação:';
 $_['entry_update_status_alert'] 	= 'Alertar sobre mudança no status da transação:<br /><span class="help">Envia e-mail para o cliente avisando-o sobre mudança no status do pedido.</span>';
+$_['entry_acrescimo']				= 'Acréscimo para vendas com PagSeguro (%)';
 
 // Error
 $_['error_permission']    		= 'Atenção: Você não possui permissão para modificar o PagSeguro!';
