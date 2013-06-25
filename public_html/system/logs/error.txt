@@ -8,3 +8,10 @@
 2013-06-21 0:20:00 - PHP Notice:  Undefined variable: boleto_bb_nosso_numero_const1 in /var/www/bomne/public_html/admin/view/template/payment/boleto_bb.tpl on line 148
 2013-06-21 0:20:00 - PHP Notice:  Undefined variable: entry_nosso_numero_const2 in /var/www/bomne/public_html/admin/view/template/payment/boleto_bb.tpl on line 151
 2013-06-21 0:20:00 - PHP Notice:  Undefined variable: boleto_bb_nosso_numero_const2 in /var/www/bomne/public_html/admin/view/template/payment/boleto_bb.tpl on line 152
+2013-06-24 22:36:06 - SEDEX Hoje: Serviço indisponível para o trecho informado.
+2013-06-24 22:38:46 - SEDEX Hoje: Serviço indisponível para o trecho informado.
+2013-06-24 22:38:49 - SEDEX Hoje: Serviço indisponível para o trecho informado.
+2013-06-24 22:39:26 - PHP Warning:  number_format() expects parameter 1 to be double, string given in /var/www/bomne/public_html/catalog/controller/payment/boleto_bb.php on line 102
+2013-06-24 22:39:26 - PHP Notice:  Undefined variable: linha in /var/www/bomne/public_html/boleto/include/funcoes_bb.php on line 87
+2013-06-24 22:39:26 - PHP Notice:  Undefined variable: linha in /var/www/bomne/public_html/boleto/include/funcoes_bb.php on line 88
+2013-06-24 22:39:26 - PHP Notice:  Undefined variable: nossonumero in /var/www/bomne/public_html/boleto/include/funcoes_bb.php on line 90

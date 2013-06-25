@@ -36,3 +36,7 @@
 # /upload/backup.install/*
 # /upload/install/*
 
+/public_html/nbproject/private/
+
+/*.sublime-project
+/*.sublime-workspace
